@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "example_starter"
+version = "0.1.0"
+description = "Starter project with examples."
+authors = ["Fa-bi-an <dev@fabiannie.haus>"]
+readme = "README.md"
+packages = [{include = "example_starter", from = "src"}]
+
+[tool.poetry.dependencies]
+python =  "~3.11"
+numpy = "^1.24.2"
+pandas = "^1.5.3"
+python-dotenv = "^1.0.0"
+scikit-learn = "^1.2.2"
+
+
+[tool.poetry.group.dev.dependencies]
+matplotlib = "^3.7.1"
+seaborn = "^0.12.2"
+jupyter = "^1.0.0"
+black = "^23.1.0"
+jupyter-black = "^0.3.1"
+mypy = "^1.1.1"
+isort = "^5.12.0"
+pytest = "^7.2.2"
+pytest-mock = "^3.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
